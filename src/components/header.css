@@ -1,0 +1,20 @@
+header {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.player {
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+.player img {
+  border-radius: 50%;
+}
+
+.user-name {
+  padding-left: 5px;
+}
