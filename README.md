@@ -1,16 +1,12 @@
-### Termos de acordo
+# About
+Project Trivia is a questions and answers game, where you can see your score at a rank in the end, if you like. Developed with React, Redux and CSS. Good luck!
 
-Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+# How to start (you must have Node.js installed)
+- Clone this repository
+- npm i
+- npm start
 
-# Boas vindas ao repositório do projeto de Trivia!
-
-Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
-
-Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir desse repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-
----
-
-# Sumário
+# Summary
 
 - [Boas vindas ao repositório do projeto de Trivia!](#boas-vindas-ao-repositório-do-projeto-de-trivia)
 - [Sumário](#sumário)
