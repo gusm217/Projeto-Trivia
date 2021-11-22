@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import Header from '../../components/Header';
+import './feedback.css';
 
 class Feedback extends Component {
   constructor(props) {
@@ -19,17 +20,21 @@ class Feedback extends Component {
     const { totalScore, totalAssertions } = this.state;
     if (totalAssertions < worstScore) {
       return (
-        <div>
+        <div style={ { display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '50vh' } }>
           <p data-testid="feedback-text">Podia ser melhor...</p>
           <p
             data-testid="feedback-total-question"
           >
+            Número de acertos:
+            {' '}
             {totalAssertions}
 
           </p>
           <p
             data-testid="feedback-total-score"
           >
+            Pontuação total:
+            {' '}
             {totalScore}
 
           </p>
@@ -37,17 +42,21 @@ class Feedback extends Component {
       );
     }
     return (
-      <div>
+      <div style={ { display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', height: '50vh' } }>
         <p data-testid="feedback-text">Mandou bem!</p>
         <p
           data-testid="feedback-total-question"
         >
+          Número de acertos:
+          {' '}
           {totalAssertions}
 
         </p>
         <p
           data-testid="feedback-total-score"
         >
+          Pontuação total:
+          {' '}
           {totalScore}
 
         </p>
@@ -61,16 +70,18 @@ class Feedback extends Component {
       <>
         <Header />
         { this.renderFeedback() }
-        <Link to="ranking">
-          <button type="button" data-testid="btn-ranking">
-            VER RANKING
-          </button>
-        </Link>
-        <Link to="/">
-          <button type="button" data-testid="btn-play-again">
-            Jogar Novamente
-          </button>
-        </Link>
+        <div style={ { display: 'flex', justifyContent: 'center' } }>
+          <Link to="ranking">
+            <button style={ { marginRight: '10px' } } className="feedback-button" type="button" data-testid="btn-ranking">
+              VER RANKING
+            </button>
+          </Link>
+          <Link to="/">
+            <button className="feedback-button" type="button" data-testid="btn-play-again">
+              JOGAR NOVAMENTE
+            </button>
+          </Link>
+        </div>
       </>
     );
   }

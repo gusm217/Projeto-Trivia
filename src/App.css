@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 10vmin;
+  height: 25vmin;
   margin-top: 50px;
   pointer-events: none;
 }
@@ -28,10 +28,10 @@
   background-color: #282c34;
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   font-size: calc(10px + 2vmin);
   justify-content: center;
-  min-height: 100px;
+  min-height: 300px;
 }
 
 .App-link {

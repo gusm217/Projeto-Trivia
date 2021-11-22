@@ -117,7 +117,7 @@ class Home extends Component {
             />
           </label>
           {this.renderPlayButton()}
-          {this.renderSettingsButton()}
+          {/* {this.renderSettingsButton()} */}
         </form>
       </div>
     );

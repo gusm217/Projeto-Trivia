@@ -1,14 +1,14 @@
-header {
+header {  
   align-items: flex-end;
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
   justify-content: space-around;
+  padding: 30px 0;
 }
 
 .player {
-  align-items: center;
   display: flex;
-  margin-top: 20px;
+  align-items: center;  
 }
 
 .player img {
@@ -17,4 +17,9 @@ header {
 
 .user-name {
   padding-left: 5px;
+}
+
+.points {
+  display: flex;
+  align-self: center;
 }
